@@ -1,0 +1,18 @@
+const FETCH_USER = "FETCH_USERS";
+const ADD_USER = "ADD_USERS";
+const EDIT_USER = "EDIT_USER";
+const DELETE_USER = "DELETE_USER";
+const SORT = "SORT";
+
+const OPEN_MODAL = "OPEN_MODAL";
+const CLOSE_MODAL = "CLOSE_MODAL"
+
+export {
+    FETCH_USER,
+    ADD_USER,
+    EDIT_USER,
+    DELETE_USER,
+    SORT,
+    OPEN_MODAL,
+    CLOSE_MODAL,
+}
