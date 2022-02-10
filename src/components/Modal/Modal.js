@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { useDispatch, useSelector } from 'react-redux';
-import { closeModal, openModal } from '../../redux/actions/modalActionCreator';
+import { closeModal } from '../../redux/actions/modalActionCreator';
 import { deleteUser } from '../../redux/actions/userActionCreator'
-import CreateUserForm from '../Froms/CreateUserForm/CreateUserForm';
 
 const style = {
     position: 'absolute',

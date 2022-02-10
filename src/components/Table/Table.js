@@ -60,7 +60,7 @@ const TableComponent = () => {
     return (
         <>
 
-            <Paper sx={{ width: '100%', height: '100vh', height: '100%', overflow: 'hidden' }}>
+            <Paper sx={{ width: '100%', overflow: 'hidden' }}>
                 <TableContainer sx={{ height: 'calc(100vh - 55px)' }} >
                     <Table stickyHeader aria-label="sticky table">
                         <TableHead>
