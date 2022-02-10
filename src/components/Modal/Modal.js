@@ -55,8 +55,7 @@ const ModalComponent = () => {
                         <Button variant="contained"
                             color="primary"
                             size="large"
-
-                            onClick={() => navigate("/")}
+                            onClick={handleClose}
                         >Back</Button>
                         <Button variant="contained"
                             color="error"
