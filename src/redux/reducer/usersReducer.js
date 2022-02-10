@@ -15,6 +15,15 @@ const initialState = {
 
 function propComparator(columnName) {
     return (a, b) => {
+        if (columnName === "city") {
+            console.log('jestem w city')
+            if (a.address[columnName] < b.address[columnName]) {
+                return -1;
+            }
+            if (a[columnName] > b[columnName]) {
+                return 1;
+            }
+        }
         if (a[columnName] < b[columnName]) {
             return -1;
         }
