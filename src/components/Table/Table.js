@@ -66,7 +66,7 @@ const TableComponent = () => {
                         <TableHead>
                             <TableRow>
                                 <TableCell align="center" colSpan={1}>
-                                    User
+                                    Users List
                                 </TableCell>
                                 <TableCell align="right" colSpan={5}>
                                     <Button variant="contained"
