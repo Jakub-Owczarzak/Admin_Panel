@@ -10,11 +10,11 @@ export const openModal = (data, type) => {
             type
         }
     }
-}
+};
 
 export const closeModal = () => {
     return {
         type: CLOSE_MODAL,
 
     }
-}
+};
