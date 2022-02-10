@@ -49,19 +49,19 @@ const TableComponent = () => {
     };
     const columns = [
         { id: 'id', label: 'id', minWidth: 70 },
-        { id: 'name', label: 'Name', minWidth: 170},
-        { id: 'username', label: 'User Name', minWidth: 100},
-        { id: 'email', label: 'Email', minWidth: 170},
-        { id: 'city', label: 'City', minWidth: 170},
-        {id: 'action',label: 'Action',minWidth: 170,align: 'center'},
+        { id: 'name', label: 'Name', minWidth: 170 },
+        { id: 'username', label: 'User Name', minWidth: 100 },
+        { id: 'email', label: 'Email', minWidth: 170 },
+        { id: 'city', label: 'City', minWidth: 170 },
+        { id: 'action', label: 'Action', minWidth: 170, align: 'center' },
     ];
 
     const rows = users;
     return (
         <>
 
-            <Paper sx={{ width: '100%', height: '100%', overflow: 'hidden' }}>
-                <TableContainer sx={{ height: '100%' }} >
+            <Paper sx={{ width: '100%', height: '100vh', height: '100%', overflow: 'hidden' }}>
+                <TableContainer sx={{ height: 'calc(100vh - 55px)' }} >
                     <Table stickyHeader aria-label="sticky table">
                         <TableHead>
                             <TableRow>
@@ -87,7 +87,7 @@ const TableComponent = () => {
                                             sx={{ display: "flex", cursor: "pointer" }}
                                         >
                                             {column.label}
-                                            {sortingOptions[column.id] === "desc" ? <span class="material-icons">
+                                            {sortingOptions[column.id] === "desc" ? <span className="material-icons">
                                                 arrow_downward
                                             </span> :
                                                 <span className="material-icons">

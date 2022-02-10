@@ -4,7 +4,7 @@ import * as ActionTypes from '../action-types/action-types';
 const initialState = {
     users: [],
     sortingOptions: {
-        id: "desc",
+        id: "asc",
         name: "desc",
         username: "desc",
         city: "desc",
