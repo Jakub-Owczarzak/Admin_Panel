@@ -6,6 +6,8 @@ import Modal from '@mui/material/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { closeModal } from '../../redux/actions/modalActionCreator';
 import { deleteUser } from '../../redux/actions/userActionCreator'
+import { useNavigate } from 'react-router-dom';
+import { ButtonGroup } from '@mui/material';
 
 const style = {
     position: 'absolute',
@@ -28,7 +30,7 @@ const style = {
 const ModalComponent = () => {
     const { isOpen, data } = useSelector(state => state.modal);
     const dispatch = useDispatch();
-
+    const navigate = useNavigate()
     const handleClose = () => dispatch(closeModal());
 
     const handleDeleteUser = (id) => {
@@ -48,12 +50,23 @@ const ModalComponent = () => {
                     <Typography sx={{ mb: 3 }} variant="h6" component="h2">
                         Do you want delete user {data.name} ?
                     </Typography >
-                    <Button variant="contained"
-                        color="error"
-                        size="large"
-                        style={{ marginLeft: 16 }}
-                        onClick={() => handleDeleteUser(data.id)}
-                    >Delete</Button>
+
+                    <ButtonGroup fullWidth={true} variant="contained" aria-label="outlined button group">
+                        <Button variant="contained"
+                            color="primary"
+                            size="large"
+
+                            onClick={() => navigate("/")}
+                        >Back</Button>
+                        <Button variant="contained"
+                            color="error"
+                            size="large"
+                            style={{ marginLeft: 16 }}
+                            onClick={() => handleDeleteUser(data.id)}
+                        >Delete</Button>
+                    </ButtonGroup>
+
+
                 </Box>
             </Modal>
         </div>
