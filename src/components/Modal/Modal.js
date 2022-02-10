@@ -48,7 +48,7 @@ const ModalComponent = () => {
                 <Box sx={style}>
 
                     <Typography sx={{ mb: 3 }} variant="h6" component="h2">
-                        Do you want delete user {data.name} ?
+                        Do you want to delete user {data.name} ?
                     </Typography >
 
                     <ButtonGroup fullWidth={true} variant="contained" aria-label="outlined button group">
